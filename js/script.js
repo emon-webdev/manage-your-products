@@ -11,21 +11,15 @@ const addProduct = () => {
 
     // console.log(product_name, product_quantity);
     // console.log(typeof product_name, typeof product_quantity);
-
     // console.log(isNaN(product_name))
-
     const number = Number(product_quantity)
-
     // console.log(Number.isInteger(number))
-
     if (!isNaN(product_name) || !Number.isInteger(number)) {
         console.warn("vul input diso");
         return;
     }
-
     // console.log(product_name, product_quantity);
     setProductInLocalStorage(product_name, product_quantity);
-
     display();
     // window.location.reload();
     // console.table(getLocalStorageData())
@@ -89,3 +83,10 @@ const display = () => {
 }
 
 display();
+
+
+
+
+
+
+
